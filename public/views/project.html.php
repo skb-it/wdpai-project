@@ -7,6 +7,7 @@
 </head>
 <body>
     <main>
+        <h1>Id przekazane przez URL, do kontrolera i na widok: <?= $projectId ?></h1>
         <h1>Strona do prezentacji listy wszystkich projektów</h1>
         <!-- TODO: Lista projektów wyświetlona w pętli -->
     </main>
