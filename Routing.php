@@ -30,6 +30,11 @@ final class Routing
         ];
     }
 
+	/* 
+	Funkcja dzieli ścieżkę na fragmenty. Zwykłe fragmenty pozostawia bez zmian, 
+	a fragment zapisany w klamrach, na przykład {id}, zamienia na nazwany 
+	parametr przyjmujący cyfry. Następnie ponownie składa ścieżkę w wyrażenie regularne.
+	*/
     private function createPattern(string $path): string
     {
         $parts = explode('/', $path);
